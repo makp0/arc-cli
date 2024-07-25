@@ -131,6 +131,19 @@ export async function makeNewTab(url: string) {
   `);
 }
 
+export async function makeNewTab() {
+  await runAppleScript(`
+    tell application "Arc"
+      tell front window
+        make new tab
+      end tell
+
+      activate
+    end tell
+  `);
+}
+
+
 export type MakeNewWindowOptions = {
   incognito?: boolean;
   url?: string;

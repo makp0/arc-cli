@@ -74,6 +74,11 @@ export function startCli() {
       async ({ url }) => await makeNewTab(url)
     )
     .command(
+      ["new-tab", "nt"],
+      "Open a new tab",
+      async () => await makeNewTab()
+    )
+    .command(
       ["select-tab <window-id> <tab-id>", "st <window-id> <tab-id>"],
       "Select tab",
       async (yargs) =>
