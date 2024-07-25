@@ -6,6 +6,7 @@ import {
   selectSpace,
   getTabs,
   makeNewTab,
+  makeNewTabWithUrl,
   makeNewLittleArcWindow,
   selectTab,
   reloadTab,
@@ -71,7 +72,7 @@ export function startCli() {
           type: "string",
           demandOption: true,
         }),
-      async ({ url }) => await makeNewTab(url)
+      async ({ url }) => await makeNewTabWithUrl(url)
     )
     .command(
       ["new-tab", "nt"],

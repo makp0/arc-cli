@@ -119,7 +119,7 @@ export async function reloadTab({ windowId, tabId }: Pick<Tab, "windowId" | "tab
   `);
 }
 
-export async function makeNewTab(url: string) {
+export async function makeNewTabWithUrl(url: string) {
   await runAppleScript(`
     tell application "Arc"
       tell front window
