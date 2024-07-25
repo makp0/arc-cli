@@ -1,5 +1,5 @@
 {
-  "name": "@georgesg/arc-cli",
+  "name": "@makp0/arc-cli",
   "version": "0.1.1",
   "description": "A CLI for the Arc Browser",
   "author": "Georgi Gardev <georgi@gar.dev>",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/GeorgeSG/arc-cli.git"
+    "url": "https://github.com/makp0/arc-cli.git"
   },
   "main": "dist/index.js",
   "bin": {
